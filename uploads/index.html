@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikasi Crop Gambar</title>
+</head>
+<body>
+    <h1>Aplikasi Crop Gambar</h1>
+    <form action="/crop" method="post" enctype="multipart/form-data">
+        <label for="input_image">Pilih Gambar Input:</label>
+        <input type="file" name="input_image" id="input_image" required><br><br>
+        <label for="x">Nilai x:</label>
+        <input type="number" name="x" id="x" required><br><br>
+        <label for="y">Nilai y:</label>
+        <input type="number" name="y" id="y" required><br><br>
+        <label for="width">Lebar Potongan:</label>
+        <input type="number" name="width" id="width" required><br><br>
+        <label for="height">Tinggi Potongan:</label>
+        <input type="number" name="height" id="height" required><br><br>
+        <input type="hidden" name="folder_name" id="folder_name">
+        <input type="hidden" name="size" id="size">
+        <input type="submit" value="Crop">
+    </form>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<head>
+    <title>Unggah Gambar</title>
+</head>
+<body>
+    <h1>Unggah Gambar</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <br>
+        <input type="submit" value="Unggah">
+    </form>
+</body>
+</html>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+</form> -->
